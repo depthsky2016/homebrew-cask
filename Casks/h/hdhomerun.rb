@@ -14,9 +14,7 @@ cask "hdhomerun" do
 
   depends_on :macos
 
-  pkg "HDHomeRun Installer.pkg"
-
-  uninstall pkgutil: "com.silicondust.*hdhomerun"
+  installer manual: "HDHomeRun Installer.app"
 
   zap trash: [
     "~/Library/Caches/com.silicondust.hdhomerun",
